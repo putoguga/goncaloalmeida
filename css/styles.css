@@ -325,6 +325,14 @@ main {
     display : block;
 }
 
+.aboutme-img {
+    width: 80%; /* Reduz o tamanho da imagem para 80% do tamanho original */
+    margin-left: -20px; /* Move a imagem 20px para a esquerda */
+}
+.aboutme-img2 {
+    width: 80%; /* Reduz o tamanho da imagem para 80% do tamanho original */
+    margin-left: -20px; /* Move a imagem 20px para a esquerda */
+}
 .timeline__meta {
     color: var(--color-1);
 }
