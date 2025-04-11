@@ -325,14 +325,29 @@ main {
     display : block;
 }
 
+.small-image {
+    width: 100%; /* Ajusta a largura para 50% do tamanho original */
+    height: 150px; /* Mantém a proporção da imagem */
+    object-fit: cover; /* Cobre o espaço disponível */
+}
+
+.contact-btn {
+    margin-left: auto; /* Empurra o botão para a direita */
+    margin-right: 0;   /* Remove qualquer margem à direita */
+    display: block;    /* Garante que o botão seja tratado como um bloco */
+    width: fit-content; /* Ajusta a largura ao conteúdo */
+}
+
 .aboutme-img {
     width: 80%; /* Reduz o tamanho da imagem para 80% do tamanho original */
     margin-left: -20px; /* Move a imagem 20px para a esquerda */
 }
+
 .aboutme-img2 {
     width: 80%; /* Reduz o tamanho da imagem para 80% do tamanho original */
     margin-left: -20px; /* Move a imagem 20px para a esquerda */
 }
+
 .timeline__meta {
     color: var(--color-1);
 }
@@ -3655,15 +3670,18 @@ img.u-pull-left {
 }
 
 .folio-list__item-pic {
+    overflow : visible
     display  : block;
     position : absolute;
     top      : 0;
     left     : 0;
+    justify-content: center;
+    align-items: center;
 }
 
 .folio-list__item-pic img {
     vertical-align : bottom;
-    object-fit     : cover;
+    object-fit     : contain;
     width          : var(--item-min-height);
     height         : var(--item-min-height);
     margin         : 0;
