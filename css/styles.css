@@ -324,6 +324,30 @@ body {
 main {
     display : block;
 }
+.s-skills {
+    padding-top: var(--vspace-1); /* Reduz o espaço acima das skills */
+}
+/* Skills List Custom Style */
+.skills-list {
+    list-style: disc inside;
+    padding-left: 0.5em; /* Mais à esquerda */
+    font-size: var(--text-sm);
+}
+
+.s-whyhireme {
+    padding-top: var(--vspace-3);
+    padding-bottom: var(--vspace-3);
+}
+.skills-list li {
+    color: var(--color-text);
+    font-size: var(--text-sm);
+    margin-bottom: 0.7em;
+    transition: color 0.2s;
+    cursor: pointer;
+}
+.skills-list li:hover {
+    color: var(--color-1); /* Azul ao passar o rato */
+}
 
 .small-image {
     width: 100%; /* Ajusta a largura para 50% do tamanho original */
@@ -3613,7 +3637,7 @@ img.u-pull-left {
 
 .s-works {
     padding-top    : var(--vspace-5);
-    padding-bottom : var(--vspace-3_5);
+    padding-bottom : var(--vspace-1);
 }
 
 .s-works .h1 {
