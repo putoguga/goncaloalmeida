@@ -376,6 +376,12 @@ main {
     color: var(--color-1);
 }
 
+.hover-link:hover {
+    color: var(--color-1);
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
 h1 {
     font-size : 2em;
     margin    : 0.67em 0;
@@ -3574,6 +3580,10 @@ img.u-pull-left {
     letter-spacing : .2em;
     color          : var(--color-text-light);
     margin-top     : -.2rem;
+}
+
+.timeline__block.sem-bullet .timeline__bullet {
+    display: none;
 }
 
 /* ------------------------------------------------------------------- 
